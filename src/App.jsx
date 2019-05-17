@@ -7,16 +7,17 @@ import './App.less';
 
 import betaAction from './redux/action/beta';
 
+@connect(state => state)
 class App extends Component {
     componentDidMount() {
-        console.log(this.props);
+        // console.log(this.props);
     }
     handleClick() {
         this.props.dispatch(betaAction.betaChange());
     }
     render() {
         const { beta } = this.props;
-        console.log(beta);
+        // console.log(beta);
         return (
             <div className="App">
                 <header className="App-header">
@@ -38,4 +39,4 @@ class App extends Component {
     }
 }
 
-export default connect(state => state)(App);
+export default App;
