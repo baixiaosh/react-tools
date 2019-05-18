@@ -1,5 +1,5 @@
 ### 说明
-这是一个react模板，redux分支集成了redux、decorator、less等，base分支仅仅只有less
+这是一个react模板，redux分支集成了redux、decorator、less等，base分支仅仅只有less，mobx分支为react集成mobx
 
 ### 使用(需要下载git)
 ```
