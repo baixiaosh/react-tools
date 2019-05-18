@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
+import { Provider } from 'mobx-react';
 import logo from './logo.svg';
-import './App.less';
 import RouteIndex from './route';
+import stores from './mobx';
+
+import './App.less';
 
 class App extends Component {
     render() {
@@ -17,9 +20,11 @@ class App extends Component {
                         Learn React
                     </a>
                 </header>
-                <Router>
-                    <RouteIndex />
-                </Router>
+                <Provider {...stores}>
+                    <Router>
+                        <RouteIndex />
+                    </Router>
+                </Provider>
             </div>
         );
     }
