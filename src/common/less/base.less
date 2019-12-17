@@ -1,0 +1,145 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+span,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+p {
+  text-justify: distribute;
+}
+body,
+html {
+  background: #f2f3f6;
+  cursor: default;
+  word-break: break-all;
+  line-height: normal;
+  // user-select: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+address,
+cite,
+dfdn,
+em,
+var,
+i {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: couriernew, courier, monospace;
+}
+a,
+button,
+input,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  outline: none;
+} /*cursor: pointer;*/
+a:hover {
+  text-decoration: none;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+fieldset,
+img {
+  border: 0;
+  user-select: none;
+}
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  font-size: 100%;
+  font-family: tahoma, arial, Microsoft YaHei, Hiragino Sans GB, '\u5b8b\u4f53', sans-serif;
+  resize: none;
+  outline: none;
+  -webkit-appearance: none;
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+}
+input {
+  border: 0;
+  outline: none;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+}
+select {
+  border: 0;
+  outline: none;
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .safe-area-inset-bottom {
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    padding-bottom: var(--safe-area-inset-bottom);
+  }
+}
+// @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+//     .page {
+//         padding-bottom: 44px; /*no*/
+//     }
+// }
+// @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+//     .page {
+//         padding-bottom: 44px; /*no*/
+//     }
+// }
+// @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+//     .page {
+//         padding-bottom: 44px; /*no*/
+//     }
+// }
