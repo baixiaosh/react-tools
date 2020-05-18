@@ -1,14 +1,131 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+span,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+p {
+  text-justify: distribute;
+}
+body,
+html {
+  background: #f2f3f6;
+  cursor: default;
+  word-break: break-all;
+  line-height: normal;
+  // user-select: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+address,
+cite,
+dfdn,
+em,
+var,
+i {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: couriernew, courier, monospace;
+}
+a,
+button,
+input,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  outline: none;
+} /*cursor: pointer;*/
+a:hover {
+  text-decoration: none;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+fieldset,
+img {
+  border: 0;
+  user-select: none;
+}
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  font-size: 100%;
+  font-family: tahoma, arial, Microsoft YaHei, Hiragino Sans GB, '\u5b8b\u4f53', sans-serif;
+  resize: none;
+  outline: none;
+  -webkit-appearance: none;
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+}
+input {
+  border: 0;
+  outline: none;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+}
+select {
+  border: 0;
+  outline: none;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: tahoma, arial, Microsoft YaHei, Hiragino Sans GB, '\u5b8b\u4f53', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

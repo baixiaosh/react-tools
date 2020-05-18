@@ -1,14 +1,15 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'common/less/base.less';
 import { Provider } from 'react-redux';
-import { Store } from './redux/index';
+import store from 'store';
 import Routes from './route';
 import * as serviceWorker from './serviceWorker';
 
+import './index.less';
+
 ReactDOM.render(
-  <Provider store={Store}>
+  <Provider store={store}>
     <Routes />
   </Provider>,
   document.getElementById('root')
